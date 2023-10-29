@@ -13,6 +13,8 @@ public class RoomUpgradeController : MonoBehaviour
 
     private RoomController _currentRoom;
 
+    public Income pendapatan;
+
     public void OpenUpgradeWindow(RoomController room)
     {
         _currentRoom = room;
@@ -33,5 +35,12 @@ public class RoomUpgradeController : MonoBehaviour
     {
         _currentRoom.BuyUpgradePart(index);
         Debug.Log($"[{nameof(RoomUpgradeController)}]: Room {_currentRoom.Id} Upgraded! Added {_currentRoom.GetUpgradePart(index).name}");
+        
+
+        if(_currentRoom.GetUpgradePart(index).name.Equals("Meja Belajar"))
+        {
+            pendapatan.jumlahUpgrade += 1;
+            pendapatan.pendapatan -= 150;
+        }
     }
 }

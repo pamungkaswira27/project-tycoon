@@ -8,15 +8,21 @@ public class Income : MonoBehaviour
 
     public float timer = 0;
     public int pendapatan;
+
+    public int jumlahUpgrade = 0;
     // Start is called before the first frame update
     void Start()
     {
-        
+        //demo
+        //pendapatan = PlayerPrefs.GetInt("pendapatan", 0);
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        //PlayerPrefs.SetInt("pendapatan", pendapatan);
+
         if (Input.GetMouseButtonDown(0))
         {
             timer += 2;
@@ -29,7 +35,8 @@ public class Income : MonoBehaviour
 
         if(timer >= 10)
         {
-            pendapatan = pendapatan + (2 * ruangan._numberOfRoom);
+            pendapatan = pendapatan + jumlahUpgrade + (2 * ruangan._numberOfRoom);
+            
             timer = 0;
         }
     }

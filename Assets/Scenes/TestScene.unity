@@ -221,6 +221,7 @@ MonoBehaviour:
   - {fileID: 1703330167}
   - {fileID: 1348424116}
   - {fileID: 534427178}
+  pendapatan: {fileID: 1382178967}
 --- !u!1 &448150360
 GameObject:
   m_ObjectHideFlags: 0
@@ -1492,6 +1493,7 @@ MonoBehaviour:
   ruangan: {fileID: 448150362}
   timer: 0
   pendapatan: 0
+  jumlahUpgrade: 0
 --- !u!114 &1382178968
 MonoBehaviour:
   m_ObjectHideFlags: 0

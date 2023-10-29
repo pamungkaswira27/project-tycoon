@@ -19,6 +19,6 @@ public class IncomeUi : MonoBehaviour
     void Update()
     {
 
-        score.text = "Pendapatan : " + waktu.pendapatan;
+        score.text = "" + waktu.pendapatan;
     }
 }

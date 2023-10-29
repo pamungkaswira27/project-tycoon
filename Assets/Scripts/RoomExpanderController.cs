@@ -10,7 +10,11 @@ public class RoomExpanderController : MonoBehaviour
 
     public void ExpandRoom()
     {
-        _numberOfRoom++;
+        if(_numberOfRoom <= 6)
+        {
+            _numberOfRoom++;
+        }
+        
         if (_numberOfRoom > RoomManager.Instance.MaxAvailableRoom) return;
 
         GameObject roomPrefab = Instantiate(_roomPrefab);
