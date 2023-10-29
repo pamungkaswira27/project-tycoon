@@ -5,7 +5,8 @@ public class RoomExpanderController : MonoBehaviour
     [SerializeField]
     private GameObject _roomPrefab;
 
-    private int _numberOfRoom = 1;
+
+    public int _numberOfRoom = 1;
 
     public void ExpandRoom()
     {
